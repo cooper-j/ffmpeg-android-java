@@ -21,7 +21,7 @@ class CpuArchHelper {
                 }
                 // check if device is arm64 which is supported by ARMV7
             } else if (Build.CPU_ABI.equals(getArm64CpuAbi())) {
-                return CpuArch.ARMv7;
+                return CpuArch.ARMv8;
             }
         }
         return CpuArch.NONE;

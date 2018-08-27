@@ -11,6 +11,10 @@ class ArmArchHelper {
         return cpuInfoString.contains("v7");
     }
 
+    boolean isARM_v8_CPU(String cpuInfoString) {
+        return cpuInfoString.contains("v8");
+    }
+
     boolean isNeonSupported(String cpuInfoString) {
         // check cpu arch for loading correct ffmpeg lib
         return cpuInfoString.contains("-neon");
